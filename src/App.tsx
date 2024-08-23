@@ -6,6 +6,9 @@ import Layout from "./layout/Layout";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
+import SkillsPage from "./pages/SkillsPage";
+import ExperiencePage from "./pages/ExperiencePage";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -23,9 +26,7 @@ const App = () => {
 
   return (
     <div
-      className={`${
-        theme?.theme === "Dark" ? "bg-appBlack" : "bg-appLightGray"
-      } `}
+      className={`${theme?.theme === "Dark" ? "bg-appBlack" : "bg-appWhite"} `}
     >
       <BrowserRouter>
         <Routes>
@@ -33,6 +34,9 @@ const App = () => {
             <Route element={<Layout />}>
               <Route index element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
+              <Route path="projects" element={<ProjectPage />} />
+              <Route path="skilss" element={<SkillsPage />} />
+              <Route path="experience" element={<ExperiencePage />} />
               <Route path="contact" element={<ContactPage />} />
             </Route>
           </Route>
