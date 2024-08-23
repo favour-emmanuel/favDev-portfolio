@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        appBlack: "#262626",
+        appBlack: "#0d0d0d",
         appWhite: "#ECEEEE",
       },
       fontFamily: {
