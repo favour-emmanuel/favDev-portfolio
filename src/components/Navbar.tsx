@@ -70,13 +70,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="lg:py-10 py-5 px-4 lg:px-10">
+    <nav className="lg:py-10 py-5 px-5 lg:px-10 sticky top-0 z-50">
       <header
         className={`${
           theme?.theme === "Light"
             ? "bg-[#e4ecec] text-[#1B1E22] border border-white/45 "
             : "bg-appBlack text-[#BBBCBD] border border-white/10"
-        }   py-4 lg:px-14 px-6 sticky top-0 z-50 backdrop-blur-lg bg-opacity-45 rounded-full `}
+        }   py-4 lg:px-14 px-6 backdrop-blur-md bg-opacity-45 rounded-full `}
       >
         <div className="flex justify-between items-center">
           <Link to="/" className="text-base lg:text-[22px] font-extrabold">
@@ -118,6 +118,9 @@ const Navbar = () => {
             </button>
             <button className="hidden lg:flex bg-linear-gradient text-sm text-[#323232] py-3 px-5 rounded-full hover:bg-transparent hover:border hover:border-appGreen hover:text-appGreen hover:ease-in-out hover:duration-300">
               Download CV
+              <span className="text-xl ml-2">
+                <Icon icon="iconoir:download" />
+              </span>
             </button>
           </div>
 
