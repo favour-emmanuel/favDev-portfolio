@@ -7,7 +7,7 @@ const AboutPage = () => {
 
   return (
     <div
-      className={`lg:px-16 px-5 py-16 flex flex-col lg:flex-row gap-x-10 lg:my-20 ${
+      className={`lg:px-16 px-5 py-16 flex flex-col lg:flex-row lg:gap-x-10 ${
         theme?.theme === "Light" ? "bg-[#fbfbfbb1]" : "bg-[#1e1e1e]"
       }`}
     >
