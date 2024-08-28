@@ -3,3 +3,11 @@ export interface navItem {
   path: string;
   onclick: () => void;
 }
+
+export interface portfolio {
+  image: string;
+  title: string;
+  label: string;
+  tools: string[];
+  url: string;
+}
