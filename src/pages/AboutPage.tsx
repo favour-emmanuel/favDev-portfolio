@@ -7,8 +7,8 @@ const AboutPage = () => {
 
   return (
     <div
-      className={`lg:px-16 px-5 py-16 flex flex-col lg:flex-row lg:gap-x-10 ${
-        theme?.theme === "Light" ? "bg-[#fbfbfbb1]" : "bg-[#1e1e1e]"
+      className={`lg:px-16 px-5 py-16 flex flex-col lg:flex-row lg:gap-x-10 rounded-t-2xl lg:rounded-t-[3rem] ${
+        theme?.theme === "Light" ? "bg-[#fbfbfb8d]" : "bg-[#1e1e1e]"
       }`}
     >
       <div className="h-full max-h-[25rem] w-full max-w-[25rem] flex justify-center items-center">
@@ -34,15 +34,19 @@ const AboutPage = () => {
           Favour Emmanuel
         </span>
         <p
-          className={`text-[14.5px] fonl leading-6 lg:leading-7 w-full lg:text-base my-2 lg:max-w-[36rem] ${
+          className={`text-[14.5px] fonl leading-6 lg:leading-7 w-full lg:text-base my-2 lg:max-w-[40rem] ${
             theme?.theme === "Light" ? "text-appBlack" : "text-appWhite"
           }`}
         >
-          Hello! I'm a Web Developer with over 2 years of experience.
-          Experienced with all stages of the development cycle for dynamic web
-          projects. Having an in-depth knowledge including advanced HTML5, CSS3,
-          Tailwind Css Javascript, jQuery, React Js, and also a strong
-          background in management and leadership.
+          <h3 className="text-sm font-bold">Hello!</h3>
+          I'm a Web Developer with over 2 years of experience, skilled in all
+          stages of dynamic web project development. I have in-depth expertise
+          in advanced HTML5, CSS3, Tailwind CSS, JavaScript, jQuery, and
+          React.js. I also bring a strong background in management and
+          leadership, enabling me to effectively collaborate with teams and lead
+          projects to successful completion. My passion for clean, efficient
+          code and responsive design drives me to stay updated with the latest
+          industry trends and technologies.
         </p>
       </div>
     </div>
