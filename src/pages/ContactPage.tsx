@@ -53,7 +53,7 @@ const ContactPage: React.FC = () => {
     >
       <div className="grid md:grid-cols-2 grid-cols-1 gap-12 justify-between max-w-[68rem] w-full mx-auto lg:px-0 px-5 my-14">
         <div className="w-full ">
-          <div className="border-appGreen border flex justify-center items-center rounded-full py-2.5 mb-3 px-2 max-w-[8rem]">
+          <div className="border-[#8fc0b789] border flex justify-center items-center rounded-full py-2.5 mb-3 px-2 max-w-[8rem]">
             <h3>Get in Touch</h3>
           </div>
           <h1 className="font-extrabold text-4xl text-appGreen">
@@ -72,9 +72,9 @@ const ContactPage: React.FC = () => {
               <div
                 className={`${
                   theme?.theme === "Dark"
-                    ? "bg-black/50"
-                    : "bg-[#f3f3f3] text-appBlack"
-                } border border-appGreen lg:max-w-[18rem] py-2.5 px-2 rounded-md w-full`}
+                    ? "bg-black/50 border-[#222121]"
+                    : "bg-[#e5ebebc9] text-appBlack border-[#8fc0b789]"
+                } border lg:max-w-[18rem] py-2.5 px-2 rounded-md w-full`}
               >
                 <input
                   type="text"
@@ -86,8 +86,8 @@ const ContactPage: React.FC = () => {
               <div
                 className={`${
                   theme?.theme === "Dark"
-                    ? "bg-black/50"
-                    : "bg-[#f3f3f3] text-appBlack"
+                    ? "bg-black/50 border-[#222121]"
+                    : "bg-[#e5ebebc9] text-appBlack border-[#8fc0b789]"
                 } border border-appGreen lg:max-w-[18rem] py-2.5 px-2 rounded-md w-full`}
               >
                 <input
@@ -114,9 +114,9 @@ const ContactPage: React.FC = () => {
             <div
               className={`${
                 theme?.theme === "Dark"
-                  ? "bg-black/85"
-                  : "bg-[#f3f3f3] text-appBlack"
-              } border border-appGreen text-apptextAlt  py-2.5 px-2 rounded-md w-full mt-4`}
+                  ? "bg-black/50 border-[#222121]"
+                  : "bg-[#e5ebebc9] text-appBlack border-[#8fc0b789]"
+              } border border-appGreen text-apptextAlt  py-3 px-2 rounded-md w-full my-4`}
             >
               <input
                 type="text"
@@ -130,12 +130,13 @@ const ContactPage: React.FC = () => {
                 {getErrorMessage(errors.phone)}
               </p>
             )}
+            {/* textarea */}
             <div
               className={`${
                 theme?.theme === "Dark"
-                  ? "bg-black/85"
-                  : "bg-[#f3f3f3] text-appBlack"
-              } border border-appGreen  py-3 px-2 rounded-md w-full mt-4 h-[11rem]`}
+                  ? "bg-black/50 border-[#222121]"
+                  : "bg-[#e5ebebc9] text-appBlack border-[#8fc0b789]"
+              } border border-appGreen  py-3 px-2 rounded-md w-full my-4 h-[14rem]`}
             >
               <textarea
                 placeholder="Message"
@@ -153,7 +154,7 @@ const ContactPage: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-appGreen text-appLightGray text-sm py-4 px-2 rounded-lg w-full mt-4"
+                className="bg-linear-gradient text-[#323232] text-sm py-4 px-2 rounded-lg w-full mt-4"
               >
                 {isSubmitting ? "Sending..." : "Send message"}
               </button>

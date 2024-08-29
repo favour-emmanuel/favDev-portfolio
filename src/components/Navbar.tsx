@@ -116,7 +116,7 @@ const Navbar = () => {
                 </span>
               )}
             </button>
-            <button className="hidden lg:flex bg-linear-gradient text-sm text-[#323232] py-3 px-5 rounded-full hover:bg-transparent hover:border hover:border-appGreen hover:text-appGreen hover:ease-in-out hover:duration-300">
+            <button className="hidden lg:flex bg-linear-gradient text-sm text-[#323232] py-3 px-5 rounded-full">
               Download CV
               <span className="text-xl ml-2">
                 <Icon icon="iconoir:download" />

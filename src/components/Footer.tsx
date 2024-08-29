@@ -12,17 +12,26 @@ const Footer = () => {
         className={`w-full border-t-[1.4px] ${
           theme?.theme === "Dark"
             ? "border-t-[#2323239b] text-[#BBBCBD]"
-            : "border-t-[#315a5a8e]"
+            : "border-t-[#649d923f]"
         }  lg:mx-5 mx-3 pt-5 lg:pt-8 flex flex-col lg:flex-row gap-y-3 lg:gap-y-0 justify-between mt-7 `}
       >
         <div>
-          <Link to="/" className="text-base lg:text-[22px] font-extrabold">
+          <Link
+            to="/"
+            className="text-base lg:text-xl font-extrabold flex items-center"
+          >
+            <Icon icon="ic:outline-less-than" />
             fav.<span className="text-appGreen">Dev</span>
+            <Icon icon="radix-icons:slash" />
+            <Icon
+              icon="ic:sharp-greater-than"
+              className="ml-[-6px] text-[#67be80] font-bold"
+            />
           </Link>
           <p
             className={`${
               theme?.theme === "Dark" ? "text-[#BBBCBD]" : ""
-            } text-sm lg:text-[15px]`}
+            } text-[12.48px] lg:text-sm`}
           >
             &copy; 2024 Favour Emmanuel
           </p>
@@ -34,7 +43,7 @@ const Footer = () => {
         >
           <h3
             className={`border ${
-              theme?.theme === "Light" ? "border-[#4d792f]" : ""
+              theme?.theme === "Light" ? "border-[#8fc0b789]" : ""
             } p-1.5 rounded-full hover:scale-[1.15] cursor-pointer`}
           >
             <a href="https://github.com/favour-emmanuel" target="_blank">
@@ -43,7 +52,7 @@ const Footer = () => {
           </h3>
           <h3
             className={`border ${
-              theme?.theme === "Light" ? "border-[#4d792f]" : ""
+              theme?.theme === "Light" ? "border-[#8fc0b789]" : ""
             } p-1.5 rounded-full hover:scale-[1.15] cursor-pointer`}
           >
             <a href="https://www.linkedin.com/in/favour-emma/" target="_blank">
@@ -52,7 +61,7 @@ const Footer = () => {
           </h3>
           <h3
             className={`border ${
-              theme?.theme === "Light" ? "border-[#4d792f]" : ""
+              theme?.theme === "Light" ? "border-[#8fc0b789]" : ""
             } p-1.5 rounded-full hover:scale-[1.15] cursor-pointer`}
           >
             <a href="https://x.com/divine_emeralds" target="_blank">
@@ -61,7 +70,7 @@ const Footer = () => {
           </h3>
           <div
             className={`border ${
-              theme?.theme === "Light" ? "border-[#97f857d2]" : ""
+              theme?.theme === "Light" ? "border-[#8fc0b789]" : ""
             } p-1.5 rounded-full hover:scale-[1.15] cursor-pointer`}
           >
             <a href="mailto:iyenefavour@gmail.com">

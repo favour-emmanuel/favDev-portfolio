@@ -99,7 +99,7 @@ const ProjectPage = () => {
         </p>
       </div>
 
-      <div className="absolute right-0 bottom-4 top-0">
+      <div className=" hidden lg:block lg:absolute right-0 bottom-4 top-[-2rem]">
         <img src={lineBg} alt="" />
       </div>
 
