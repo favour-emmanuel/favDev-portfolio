@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <div
       className={`lg:px-16 px-5 py-16 flex flex-col lg:flex-row lg:gap-x-10 rounded-t-2xl lg:rounded-t-[3rem] ${
-        theme?.theme === "Light" ? "bg-[#e4ecec]" : "bg-[#1e1e1e]"
+        theme?.theme === "Light" ? "bg-[#f5f5f5]" : "bg-[#1e1e1e]"
       }`}
     >
       <div className="h-full max-h-[25rem] w-full max-w-[25rem] flex justify-center items-center">

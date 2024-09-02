@@ -11,3 +11,8 @@ export interface portfolio {
   tools: string[];
   url: string;
 }
+
+export interface skills {
+  icon?: JSX.Element;
+  text: string;
+}

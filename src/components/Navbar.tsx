@@ -52,13 +52,6 @@ const Navbar = () => {
         setNav(false);
       },
     },
-    {
-      label: "Experience",
-      path: "/experience",
-      onclick: () => {
-        setNav(false);
-      },
-    },
 
     {
       label: "Contact",
@@ -74,7 +67,7 @@ const Navbar = () => {
       <header
         className={`${
           theme?.theme === "Light"
-            ? "bg-[#e4ecec] text-[#1B1E22] border border-white/45 "
+            ? "bg-[#eaf7f7] text-[#1B1E22] border border-white/45 "
             : "bg-appBlack text-[#BBBCBD] border border-white/10"
         }   py-4 lg:px-14 px-6 backdrop-blur-md bg-opacity-45 rounded-full `}
       >

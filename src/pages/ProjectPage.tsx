@@ -69,9 +69,7 @@ const ProjectPage = () => {
   return (
     <div
       className={`${
-        theme?.theme === "Light"
-          ? "bg-[#ddede7db]"
-          : "bg-appBlack text-[#BBBCBD]"
+        theme?.theme === "Light" ? "bg-appLight" : "bg-appBlack text-[#BBBCBD]"
       } lg:py-14 py-5 px-5 lg:px-14 relative`}
     >
       <div>
@@ -100,15 +98,15 @@ const ProjectPage = () => {
       </div>
 
       <div className=" hidden lg:block lg:absolute right-0 bottom-4 top-0">
-        <img src={lineBg} alt="" />
+        <img src={lineBg} alt="" className="h-[25rem]" />
       </div>
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 mt-24">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 mt-[6.85rem]">
         {portfolioItems.map((item, index) => (
           <div
             key={index}
             className={`${
-              theme?.theme === "Light" ? "bg-[#f3fffb]" : "bg-[#242424]"
+              theme?.theme === "Light" ? "bg-[#fffbfb]" : "bg-[#242424]"
             } p-3  rounded-lg`}
           >
             <div className="w-full">

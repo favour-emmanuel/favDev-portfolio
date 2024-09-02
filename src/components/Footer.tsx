@@ -18,7 +18,7 @@ const Footer = () => {
         <div>
           <Link
             to="/"
-            className="text-base lg:text-xl font-extrabold flex items-center"
+            className="text-[15px] lg:[16.5px] font-extrabold flex items-center"
           >
             <Icon icon="ic:outline-less-than" />
             fav.<span className="text-appGreen">Dev</span>

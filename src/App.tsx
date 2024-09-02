@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <div
-      className={`${theme?.theme === "Dark" ? "bg-appBlack" : "bg-appWhite"} `}
+      className={`${theme?.theme === "Dark" ? "bg-appBlack" : "bg-appLight"} `}
     >
       <BrowserRouter>
         <Routes>

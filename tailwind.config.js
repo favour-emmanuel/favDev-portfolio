@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         appBlack: "#0d0d0d",
-        appWhite: "#ECEEEE",
+        appWhite: "#f7f7f7",
+        appLight: "#F9F9F9",
       },
       fontFamily: {
         mulish: ["Mulish"],
