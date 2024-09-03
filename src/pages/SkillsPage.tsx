@@ -73,8 +73,20 @@ const SkillsPage = () => {
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-3 my-5">
           {mySkills.map((skill, index) => (
             <div key={index}>
-              <h1 className="text-2xl lg:3xl">{skill.icon}</h1>
-              <p className="text-[13px] lg:text-[14.8px] my-3">{skill.text}</p>
+              <h1
+                className={`${
+                  theme?.theme === "Dark" ? "text-appWhite" : ""
+                } text-2xl lg:3xl`}
+              >
+                {skill.icon}
+              </h1>
+              <p
+                className={`${
+                  theme?.theme === "Dark" ? "text-appWhite" : ""
+                } text-[13px] lg:text-[14.5px] my-3 font-light`}
+              >
+                {skill.text}
+              </p>
             </div>
           ))}
         </div>
@@ -85,7 +97,7 @@ const SkillsPage = () => {
         className={`max-w-[30rem] lg:max-w-[28rem] border lg:mt-0 mt-8 ${
           theme?.theme === "Dark"
             ? "bg-[#111] border-white/10"
-            : "bg-[#e4ecec] border-white/45"
+            : "bg-[#eaf7f7] border-white/45"
         } rounded-lg`}
       >
         <img src={salyImg} alt="" />
