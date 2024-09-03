@@ -123,8 +123,8 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? `fixed left-[-1.5rem] top-[-1rem] w-full max-w-[35rem] md:max-w-[45rem] z-999 duration-300 px-10 py-9 ${
-                    theme?.theme === "Light" ? "bg-appWhite" : "bg-appBlack"
+                ? `fixed left-[-1.5rem] top-[-1rem] w-full max-w-[35rem] md:max-w-[45rem] lg:hidden z-999 duration-300 px-10 py-9 ${
+                    theme?.theme === "Light" ? "bg-appLight" : "bg-appBlack"
                   } h-screen`
                 : "fixed left-[-100%] top-0 h-full z-10 "
             }
