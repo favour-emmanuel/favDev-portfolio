@@ -109,12 +109,17 @@ const Navbar = () => {
                 </span>
               )}
             </button>
-            <button className="hidden lg:flex bg-linear-gradient text-sm text-[#323232] py-3 px-5 rounded-full">
-              Download CV
-              <span className="text-xl ml-2">
-                <Icon icon="iconoir:download" />
-              </span>
-            </button>
+            <a
+              href="/Favour-emmanuel-resume.pdf"
+              download={"Favour-emmanuel-resume.pdf"}
+            >
+              <button className="hidden lg:flex bg-linear-gradient text-sm text-[#323232] py-3 px-5 rounded-full">
+                Download CV
+                <span className="text-xl ml-2">
+                  <Icon icon="iconoir:download" />
+                </span>
+              </button>
+            </a>
           </div>
 
           {/* mobile menu */}
