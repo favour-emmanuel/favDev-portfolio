@@ -73,7 +73,11 @@ const Footer = () => {
               theme?.theme === "Light" ? "border-[#8fc0b789]" : ""
             } p-1.5 rounded-full hover:scale-[1.15] cursor-pointer`}
           >
-            <a href="mailto:iyenefavour@gmail.com">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=iyenefavour@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon="fluent:mail-20-filled" />
             </a>
           </div>
