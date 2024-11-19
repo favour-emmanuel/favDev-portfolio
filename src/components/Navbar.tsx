@@ -47,8 +47,8 @@ const Navbar = () => {
                   className={
                     location.pathname === item.path
                       ? theme?.theme === "Dark"
-                        ? "text-[#fafefe] font-bold"
-                        : "text-[#111111] font-bold"
+                        ? "text-[#fafefef0] font-bold"
+                        : "text-[#333333] font-bold"
                       : ""
                   }
                 >
