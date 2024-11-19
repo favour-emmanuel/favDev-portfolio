@@ -1,9 +1,9 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
-import { navItem } from "../constants";
+import { useDispatch, useSelector } from "react-redux";
 import { selectTheme, setTheme } from "../Redux/slice/themeSlice";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { navItems } from "../constants/data";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -22,46 +22,9 @@ const Navbar = () => {
     }
   };
 
-  const navItems: navItem[] = [
-    {
-      label: "Home",
-      path: "/",
-      onclick: () => {
-        setNav(false);
-      },
-    },
-
-    {
-      label: "About",
-      path: "/about",
-      onclick: () => {
-        setNav(false);
-      },
-    },
-    {
-      label: "Projects",
-      path: "/projects",
-      onclick: () => {
-        setNav(false);
-      },
-    },
-    {
-      label: "Skills",
-      path: "/skills",
-      onclick: () => {
-        setNav(false);
-      },
-    },
-
-    {
-      label: "Contact",
-      path: "/contact",
-      onclick: () => {
-        setNav(false);
-      },
-    },
-  ];
-
+  const handleNav = () => {
+    setNav(false);
+  };
   return (
     <nav className="lg:py-10 py-5 px-5 lg:px-10 sticky top-0 z-50">
       <header
@@ -80,6 +43,7 @@ const Navbar = () => {
               <li key={index}>
                 <Link
                   to={item.path}
+                  onClick={handleNav}
                   className={
                     location.pathname === item.path
                       ? theme?.theme === "Dark"
@@ -150,7 +114,7 @@ const Navbar = () => {
                 <li key={index}>
                   <Link
                     to={item.path}
-                    onClick={item.onclick}
+                    onClick={handleNav}
                     className={
                       location.pathname === item.path ? "text-appGreen" : ""
                     }

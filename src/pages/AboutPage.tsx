@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { selectTheme } from "../Redux/slice/themeSlice";
-import aboutImg from "../assets/about-img2.jpg";
+import aboutImg from "/about-img2.jpg";
 
 const AboutPage = () => {
   const theme = useSelector(selectTheme);

@@ -1,70 +1,11 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { selectTheme } from "../Redux/slice/themeSlice";
 import lineBg from "../assets/line-BGdesign.svg";
-import { portfolio } from "../constants";
-import shot1 from "../assets/shot-1.png";
-import shot2 from "../assets/shot-2.png";
-import shot3 from "../assets/short-3.png";
-import shot4 from "../assets/shot-4.png";
-import shot5 from "../assets/shot-5.png";
-import shot6 from "../assets/shot-6.png";
-import { Link } from "react-router-dom";
+import { portfolioItems } from "../constants/data";
 
 const ProjectPage = () => {
   const theme = useSelector(selectTheme);
-
-  const portfolioItems: portfolio[] = [
-    {
-      image: shot1,
-      title: "MC Profile Site",
-      label:
-        "A dynamic website showcasing the MC's portfolio, services, and booking information.",
-      tools: ["React", "Typescript", "Tailwindcss"],
-      url: "https://www.kezzyspeaks.ca/",
-    },
-
-    {
-      image: shot2,
-      title: "Gadgets Store",
-      label:
-        "An interactive online store specializing in headsets and audio equipment, designed to offer users an easy and engaging shopping experience.",
-      tools: ["React", "Typescript", "Tailwindcss"],
-      url: "https://hng-ecomm-site.vercel.app/",
-    },
-
-    {
-      image: shot3,
-      title: "Food Services",
-      label:
-        "An intuitive website designed for hassle-free burger ordering, allowing customers to choose from a variety of burgers, customize their orders, and enjoy seamless delivery or pickup options.",
-      tools: ["React", "Typescript", "Tailwindcss"],
-      url: "https://didi-eats-website.vercel.app/",
-    },
-    {
-      image: shot4,
-      title: "Real Estate Site",
-      label:
-        "A modern real estate site offering a seamless experience for browsing and purchasing properties,and expert advice to guide users through every step of their real estate journey.",
-      tools: ["React", "Typescript", "Tailwindcss"],
-      url: "https://real-estate-investment-liart.vercel.app/",
-    },
-    {
-      image: shot5,
-      title: "Fashion Store",
-      label:
-        "An elegant fashion website that showcases a curated collection of clothing and accessories, with easy navigation, high-quality images, and personalized recommendations to help you find the perfect pieces for any occasion",
-      tools: ["React", "Typescript", "Tailwindcss"],
-      url: "https://quiet-banoffee-5ddb9f.netlify.app/",
-    },
-    {
-      image: shot6,
-      title: "Finance Store",
-      label:
-        "An elegant fashion website that showcases a curated collection of clothing and accessories, with easy navigation, high-quality images, and personalized recommendations to help you find the perfect pieces for any occasion",
-      tools: ["React", "Typescript", "Tailwindcss"],
-      url: "https://one-point-landing-page.vercel.app/",
-    },
-  ];
 
   return (
     <div
@@ -97,7 +38,7 @@ const ProjectPage = () => {
         </p>
       </div>
 
-      <div className=" hidden lg:block lg:absolute right-0 bottom-4 top-0">
+      <div className=" hidden h-0 lg:block lg:absolute right-0 bottom-4 top-0">
         <img src={lineBg} alt="" className="h-[25rem]" />
       </div>
 

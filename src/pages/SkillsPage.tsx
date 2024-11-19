@@ -1,54 +1,10 @@
 import { useSelector } from "react-redux";
 import { selectTheme } from "../Redux/slice/themeSlice";
 import salyImg from "../assets/Saly-10.png";
-import { skills } from "../constants";
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { mySkills } from "../constants/data";
 
 const SkillsPage = () => {
   const theme = useSelector(selectTheme);
-
-  const mySkills: skills[] = [
-    {
-      icon: <Icon icon="logos:javascript" />,
-      text: "Javascript",
-    },
-    {
-      icon: <Icon icon="devicon:typescript" />,
-      text: "Typescript",
-    },
-    {
-      icon: <Icon icon="logos:react" />,
-      text: "React",
-    },
-    {
-      icon: <Icon icon="cib:jquery" />,
-      text: "Jquery",
-    },
-    {
-      icon: <Icon icon="devicon:tailwindcss" />,
-      text: "Tailwindcss",
-    },
-    {
-      icon: <Icon icon="logos:bootstrap" />,
-      text: "Bootstrap",
-    },
-    {
-      icon: <Icon icon="logos:figma" />,
-      text: "Figma",
-    },
-    {
-      icon: <Icon icon="logos:npm-icon" />,
-      text: "Npm",
-    },
-    {
-      icon: <Icon icon="devicon:git" />,
-      text: "Git",
-    },
-    {
-      icon: <Icon icon="ant-design:github-outlined" />,
-      text: "Github",
-    },
-  ];
 
   return (
     <div className="lg:py-14 py-5 px-5 lg:px-14 my-10 flex flex-col lg:flex-row justify-between">

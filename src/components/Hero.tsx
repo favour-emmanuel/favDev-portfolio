@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectTheme } from "../Redux/slice/themeSlice";
-import heroImgDark from "../assets/dp-img-dark.png";
-import heroImg from "../assets/dp-img.png";
+import heroImgDark from "/dp-img-dark.png";
+import heroImg from "/dp-img.png";
 
 const Hero = () => {
   const theme = useSelector(selectTheme);
