@@ -62,7 +62,7 @@ const ProjectPage = () => {
       label:
         "An elegant fashion website that showcases a curated collection of clothing and accessories, with easy navigation, high-quality images, and personalized recommendations to help you find the perfect pieces for any occasion",
       tools: ["React", "Typescript", "Tailwindcss"],
-      url: "https://one-point-landing-pgae.vercel.app/",
+      url: "https://one-point-landing-page.vercel.app/",
     },
   ];
 
