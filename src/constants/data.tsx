@@ -79,7 +79,7 @@ export const portfolioItems: portfolio[] = [
     label:
       "An elegant fashion website that showcases a curated collection of clothing and accessories, with easy navigation, high-quality images, and personalized recommendations to help you find the perfect pieces for any occasion",
     tools: ["React", "Typescript", "Tailwindcss"],
-    url: "https://quiet-banoffee-5ddb9f.netlify.app/",
+    url: "https://shop-co-smoky.vercel.app/",
   },
   {
     image: "/shot-6.png",
