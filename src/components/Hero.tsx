@@ -36,7 +36,7 @@ const Hero = () => {
           seemless, visually appealing and user-friendly interfaces.
         </p>
         <button className="bg-[#7bdc96] w-full max-w-[9rem] py-3 my-1.5 text-appBlack lg:text-[15px] text-[13px] font-semibold rounded-lg">
-          <Link to={"/projects"}> My Project</Link>
+          <Link to={"/projects"}> My Projects</Link>
         </button>
       </div>
 
