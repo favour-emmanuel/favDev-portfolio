@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { selectTheme } from "../Redux/slice/themeSlice";
 import heroImgDark from "/dp-img-dark.png";
 import heroImg from "/dp-img.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const theme = useSelector(selectTheme);
@@ -35,7 +36,7 @@ const Hero = () => {
           seemless, visually appealing and user-friendly interfaces.
         </p>
         <button className="bg-[#7bdc96] w-full max-w-[9rem] py-3 my-1.5 text-appBlack lg:text-[15px] text-[13px] font-semibold rounded-lg">
-          My Project
+          <Link to={"/projects"}> My Project</Link>
         </button>
       </div>
 
