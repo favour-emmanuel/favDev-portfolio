@@ -92,14 +92,14 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? `fixed left-[-1.5rem] top-[-1rem] w-full max-w-[38rem] md:max-w-[48rem] lg:hidden z-999 duration-300 px-10 py-9 ${
+                ? `fixed left-[-1.5rem] top-[-1.5rem] w-full max-w-[40rem] md:max-w-[48rem] lg:hidden z-999 duration-300 px-10 py-9 ${
                     theme?.theme === "Light" ? "bg-appLight" : "bg-appBlack"
                   } h-screen`
                 : "fixed left-[-100%] top-0 h-full z-10 "
             }
           >
             <div className="flex justify-between items-center">
-              <Link to="/" className="text-base lg:text-xl font-extrabold">
+              <Link to="/" className="text-[22px] font-extrabold">
                 fav.<span className="text-appGreen">Dev</span>
               </Link>
               <span

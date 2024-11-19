@@ -15,13 +15,13 @@ const ProjectPage = () => {
     >
       <div>
         <h1
-          className={`font-extrabold lg:text-4xl text-2xl my-4 border-b ${
+          className={`font-extrabold lg:text-[42px] text-4xl my-4 border-b ${
             theme?.theme === "Dark"
-              ? "border-b-[#8fffafba]"
-              : "border-b-[#3bca98d4] "
-          }  pb-4 max-w-[6rem]`}
+              ? "border-b-[#8fffafba] bg-gradient-to-r from-[#8FFFAE] to-[#ABFF74] bg-clip-text text-transparent"
+              : "border-b-[#3bca98d4] text-[#1B1E22]"
+          }  pb-5 lg:max-w-[13rem] max-w-[10rem]`}
         >
-          portfolio.
+          Portfolio.
         </h1>
         <p className=" text-sm lg:text-base w-full lg:max-w-[42rem]">
           <h4 className="font-semibold text-base my-2">
