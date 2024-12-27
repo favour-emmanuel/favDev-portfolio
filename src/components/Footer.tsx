@@ -46,7 +46,11 @@ const Footer = () => {
               theme?.theme === "Light" ? "border-[#8fc0b789]" : ""
             } p-1.5 rounded-full hover:scale-[1.15] cursor-pointer`}
           >
-            <a href="https://github.com/favour-emmanuel" target="_blank">
+            <a
+              href="https://github.com/favour-emmanuel"
+              target="_blank"
+              className="text-lg"
+            >
               <Icon icon="simple-icons:github" />
             </a>
           </h3>
@@ -55,7 +59,11 @@ const Footer = () => {
               theme?.theme === "Light" ? "border-[#8fc0b789]" : ""
             } p-1.5 rounded-full hover:scale-[1.15] cursor-pointer`}
           >
-            <a href="https://www.linkedin.com/in/favour-emma/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/favour-emma/"
+              target="_blank"
+              className="text-lg"
+            >
               <Icon icon="fa-brands:linkedin" />
             </a>
           </h3>
@@ -64,11 +72,15 @@ const Footer = () => {
               theme?.theme === "Light" ? "border-[#8fc0b789]" : ""
             } p-1.5 rounded-full hover:scale-[1.15] cursor-pointer`}
           >
-            <a href="https://x.com/divine_emeralds" target="_blank">
+            <a
+              href="https://x.com/divine_emeralds"
+              target="_blank"
+              className="text-lg"
+            >
               <Icon icon="prime:twitter" />
             </a>
           </h3>
-          <div
+          <h3
             className={`border ${
               theme?.theme === "Light" ? "border-[#8fc0b789]" : ""
             } p-1.5 rounded-full hover:scale-[1.15] cursor-pointer`}
@@ -80,7 +92,7 @@ const Footer = () => {
             >
               <Icon icon="fluent:mail-20-filled" />
             </a>
-          </div>
+          </h3>
         </div>
       </div>
     </div>
