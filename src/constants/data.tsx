@@ -110,6 +110,10 @@ export const mySkills: skills[] = [
     text: "React",
   },
   {
+    icon: <Icon icon="devicon:nextjs" />,
+    text: "Next js",
+  },
+  {
     icon: <Icon icon="cib:jquery" />,
     text: "Jquery",
   },
