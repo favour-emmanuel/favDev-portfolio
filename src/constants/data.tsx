@@ -49,6 +49,15 @@ export const portfolioItems: portfolio[] = [
   },
 
   {
+    image: "/shot-8.png",
+    title: "Country Explorer Site",
+    label:
+      "This is an interactive country explorer site that lets users search, filter by region, and view details like population, capital, and flag.",
+    tools: ["Next js", "Typescript", "Tailwindcss"],
+    url: "https://country-lists-app.vercel.app/",
+  },
+
+  {
     image: "/shot-2.png",
     title: "Gadgets Store",
     label:
