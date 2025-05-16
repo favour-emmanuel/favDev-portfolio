@@ -47,6 +47,22 @@ export const portfolioItems: portfolio[] = [
     tools: ["React", "Typescript", "Tailwindcss"],
     url: "https://www.kezzyspeaks.ca/",
   },
+  {
+    image: "/shot-9.png",
+    title: "Software Solutions Agency",
+    label:
+      "A website that offers fast, scalable websites and mobile apps for business solutions.",
+    tools: ["Next js", "Typescript", "Tailwindcsss"],
+    url: "https://www.viditech.online/",
+  },
+  {
+    image: "/shot-1.png",
+    title: "MC Profile Site",
+    label:
+      "A dynamic website showcasing the MC's portfolio, services, and booking information.",
+    tools: ["React", "Typescript", "Tailwindcss"],
+    url: "https://www.kezzyspeaks.ca/",
+  },
 
   {
     image: "/shot-8.png",
